@@ -31,11 +31,24 @@
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness"/>
 
+        <com.blaze.house.preferences.SecureSettingSwitchPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/status_bar_brightness_slider_title"
+            android:summary="@string/status_bar_brightness_slider_summary"
+            android:defaultValue="true" />
+
         <com.android.settingslib.PrimarySwitchPreference
             android:key="auto_brightness_entry"
             android:title="@string/auto_brightness_title"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
+
+        <Preference
+            android:key="qs_brightness_slider"
+            android:title="@string/qs_brightness_slider_title"
+            android:summary="@string/qs_brightness_slider_summary"
+            android:fragment="com.android.settings.display.QSBrightnessSliderSettings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
