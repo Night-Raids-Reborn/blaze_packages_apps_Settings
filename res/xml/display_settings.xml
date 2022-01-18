@@ -37,7 +37,7 @@
             android:summary="@string/status_bar_brightness_slider_summary"
             android:defaultValue="true" />
 
-        <com.android.settingslib.PrimarySwitchPreference
+        <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
             android:title="@string/auto_brightness_title"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
