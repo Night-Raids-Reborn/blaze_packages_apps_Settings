@@ -210,6 +210,12 @@
         android:fragment="com.android.settings.security.MemtagPage"
         settings:controller="com.android.settings.security.MemtagPagePreferenceController" />
 
+    <com.blaze.house.preferences.GlobalSettingSwitchPreference
+        android:order="91"
+        android:key="pm_downgrade_allowed"
+        android:title="@string/app_downgrade_title"
+        android:summary="@string/app_downgrade_summary"
+        android:defaultValue="false"/>
 
 
 </PreferenceScreen>
