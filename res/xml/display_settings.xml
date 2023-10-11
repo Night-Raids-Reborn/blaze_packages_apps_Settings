@@ -132,6 +132,7 @@
             android:title="@string/accelerometer_title"
             settings:keywords="@string/keywords_auto_rotate"
             settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
+            
 
         <!--
             Auto-rotation preference that will be shown when device state based auto-rotation
@@ -180,6 +181,13 @@
             android:summary="@string/display_cutout_force_fullscreen_summary"
             android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
             settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+
+        <SwitchPreference
+            android:key="pocket_mode"
+            android:title="@string/pocket_mode_title"
+            android:summary="@string/pocket_mode_summary"
+            settings:keywords="@string/keyword_pocket"
+            settings:controller="com.android.settings.display.PocketModeSettingsController"/>
 
         <SwitchPreference
             android:key="show_operator_name"
